@@ -175,7 +175,7 @@
 
                 $container.css({width: rootWidth, height: rootHeight})
                           .find("img:not(.deleteable)").css({width: bgWidth, height: bgHeight}).css(bgCSS);
-                $(window).trigger("backstretch_update", { rootWidth: rootWidth, rootHeight: rootHeight, bgWidth: bgWidth, bgHeight: bgHeight, top: bgCSS.top, left: bgCSS.left });
+                $(window).trigger("backstretch_update", { rootWidth: rootWidth, rootHeight: rootHeight, imgWidth: bgWidth, imgHeight: bgHeight, imgTop: bgCSS.top, imgLeft: bgCSS.left });
             } catch(err) {
                 // IE7 seems to trigger _adjustBG before the image is loaded.
                 // This try/catch block is a hack to let it fail gracefully.
